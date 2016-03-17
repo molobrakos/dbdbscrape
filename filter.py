@@ -45,7 +45,7 @@ def make_list():
     result["gene_chromosome"] = result["gene_chromosome"].fillna(0).astype(int)
     
     # rearrange cols in suitable order
-    ilsresult = result[['phenotype',
+    result = result[['phenotype',
                      'gene',
                      'gene_chromosome',
                      'gene_inheritence',
